@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagar con PayPal</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .btn-pay {
+      background-color: #0070ba;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn-pay:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="roca.jfif" alt="roca">
+    <h1>Pagar $100.00 MXN con PayPal</h1>
+    <form action="/pay" method="POST">
+      <button class="btn-pay" type="submit">Pagar ahora</button>
+    </form>
+  </div>
+</body>
+</html>
